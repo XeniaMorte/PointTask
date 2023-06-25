@@ -69,4 +69,9 @@ public class DoeblePoint extends Point {
             System.out.println("Точка не принадлежит четвертям");
         }
     }
+    @Override
+    public void printInfo(){
+        System.out.println("DOEBLEPOINTINFO: "+ getName() + " " + getCoordinateX() + " " + getCoordinateY()+ "\n"+ " "+ getName() + " "+"\n" + getId());
+
+    }
 }

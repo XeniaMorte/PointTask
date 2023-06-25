@@ -1,13 +1,14 @@
 package com.example.taskclass;
 
 import com.example.taskclass.util.PointUtil;
+import com.example.taskclass.util.Printable;
 
 import java.util.Map;
 import java.util.UUID;
 
-public class Point {
+public class Point implements Printable {
 
-    protected static double DEFAULT_POS = 0.0;
+    public static double DEFAULT_POS = 0.0;
 
     protected UUID id;
     protected String name;
@@ -64,7 +65,7 @@ public class Point {
         }
         return false;
     }
-
+    @Override
     public void printInfo() {
         System.out.println(this);
     }
@@ -94,3 +95,7 @@ public class Point {
 //        6. Подумать как реализовать присвоение айди+
 //        7. Создать классы наследники (двухмерная и трехмерная точка). Переопределить методы, если возможно. Подумать, какие поля надо добавить-
 //        8. Создать тестовый класс, в котором протестировать функционал-
+//Написать классы для отрезков (одномерный , двумерных , трехмерный)
+//9. Реализовать несколько конструкторов: один по умолчанию, когда ничего не передается, второй - передается 2 точки
+//        10. Реализовать метод, который будет возвращать длину отрезка (используя методы нахождения расстояния между точками)
+//        11. Реализовать метод по выводу информации об отрезках

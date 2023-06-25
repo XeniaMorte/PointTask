@@ -56,4 +56,9 @@ public class TriePoint extends DoeblePoint {
     public void getQuarter() {
         throw new UnsupportedOperationException(" метод не поддерживается для этого типа точки ");
     }
+    @Override
+    public void printInfo(){
+        System.out.println("TriePOINTINFO: "+ getName() + " " + getCoordinateX() + " " + getCoordinateY()+ + getCoordinateZ()+"\n"+ " "+ getName() + " "+"\n" + getId());
+
+    }
 }
